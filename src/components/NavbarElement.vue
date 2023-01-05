@@ -36,10 +36,31 @@
         </li>
       </ul>
     </div>
-    <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+    <!-- v-slot -->
+    <i class="bx bx-moon change-theme" @click="updateThemes('Tschööö')"></i>
+    <i class="bx bx-sun change-theme" @click="updateThemes('Hallo Welt')"></i>
   </nav>
 </template>
 
-<script setup>
+<script>
 import { RouterLink } from "vue-router";
+
+import { useStoreGeneral } from "@/stores/states";
+export default {
+  components: {
+    RouterLink,
+  },
+  setup() {
+    const store = useStoreGeneral();
+    return {
+      store,
+    };
+  },
+  methods: {
+    updateThemes(value) {
+      this.store.updateTheme(value);
+    },
+  },
+};
 </script>

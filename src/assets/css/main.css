@@ -67,6 +67,17 @@ body {
   background-color: var(--clr-bg);
   color: var(--clr-text);
 }
+.light-theme {
+  --clr-text: #40ecf8;
+  --clr-header: #39c3cf;
+  --clr-bg: hsl(0, 1%, 14%);
+  --clr-accent: hsl(26, 37%, 7%);
+  background-color: var(--clr-accent);
+  color: var(--clr-text);
+}
+.change-theme {
+  cursor: pointer;
+}
 h1,
 h2,
 h3 {
@@ -213,7 +224,7 @@ main {
   width: 250px;
   height: 333px;
   background: linear-gradient(
-    180deg,
+    0deg,
     hsla(25, 97%, 73%, 1),
     hsla(25, 97%, 73%, 0.2)
   );
@@ -582,6 +593,7 @@ main {
   text-decoration: underline;
 }
 .footer__social {
+  padding: 0;
   column-gap: 1.25rem;
 }
 .footer__social-link i {
@@ -597,4 +609,17 @@ main {
   margin-top: 4.5rem;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+}
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(207, 4%, 75%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(207, 4%, 65%);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(207, 4%, 50%);
+  border-radius: 0.5rem;
 }
