@@ -6,8 +6,8 @@
   <RouterView />
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { RouterView } from "vue-router";
-import NavbarElement from "./components/NavbarElement.vue";
+import NavbarElement from "@/components/NavbarElement.vue";
 import "@/assets/js/helper.js";
 </script>

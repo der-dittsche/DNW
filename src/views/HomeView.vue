@@ -230,12 +230,15 @@
             Development &<br />
             Testing
           </h3>
-          <span class="services__button">
+          <span @click.prevent="active = true" class="services__button">
             See more<i class="bx bx-right-arrow-alt services__icon"></i>
           </span>
-          <div class="services__modal">
+          <div class="services__modal" :class="{ 'active-modal': active }">
             <div class="services__modal-content">
-              <i class="bx bx-x services__modal-close"></i>
+              <i
+                @click.prevent="active = false"
+                class="bx bx-x services__modal-close"
+              ></i>
               <h3 class="services__modal-title">Development & Testing</h3>
               <p class="services__modal-description">
                 Your website will be implemented with the latest standards of
@@ -271,12 +274,15 @@
             Layout &<br />
             Design
           </h3>
-          <span class="services__button">
+          <span @click.prevent="active2 = true" class="services__button">
             See more<i class="bx bx-right-arrow-alt services__icon"></i>
           </span>
-          <div class="services__modal">
+          <div class="services__modal" :class="{ 'active-modal': active2 }">
             <div class="services__modal-content">
-              <i class="bx bx-x services__modal-close"></i>
+              <i
+                @click.prevent="active2 = false"
+                class="bx bx-x services__modal-close"
+              ></i>
               <h3 class="services__modal-title">Layout & Design</h3>
               <p class="services__modal-description">
                 Professional implementation of your ideas and wishes for your
@@ -308,12 +314,15 @@
             Hosting &<br />
             Administration
           </h3>
-          <a @click.prevent="active = true" class="services__button">
+          <a @click.prevent="active3 = true" class="services__button">
             See more<i class="bx bx-right-arrow-alt services__icon"></i>
           </a>
-          <div class="services__modal" :class="{ 'active-modal': active }">
+          <div class="services__modal" :class="{ 'active-modal': active3 }">
             <div class="services__modal-content">
-              <i class="bx bx-x services__modal-close"></i>
+              <i
+                @click.prevent="active3 = false"
+                class="bx bx-x services__modal-close"
+              ></i>
               <h3 class="services__modal-title">Hosting & Administration</h3>
               <p class="services__modal-description">
                 Technical support for your complete website infrastructure
@@ -347,20 +356,10 @@
     </section>
   </main>
 </template>
+<script setup>
+import { ref } from "vue";
 
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  setup() {
-    return {
-      active: false,
-    };
-  },
-  methods: {
-    toggleClass: function () {
-      this.active = !this.active;
-    },
-  },
-});
+const active = ref(false);
+const active2 = ref(false);
+const active3 = ref(false);
 </script>

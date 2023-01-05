@@ -35,13 +35,6 @@
   </nav>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup>
 import { RouterLink } from "vue-router";
-
-export default defineComponent({
-  setup() {
-    return {};
-  },
-});
 </script>
