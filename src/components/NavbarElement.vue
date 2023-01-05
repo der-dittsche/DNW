@@ -25,6 +25,11 @@
           ></a>
         </li>
         <li class="nav__item">
+          <a href="#testimonial" class="nav__link"
+            ><i class="bx bx-smile"></i
+          ></a>
+        </li>
+        <li class="nav__item">
           <a href="#contact" class="nav__link"
             ><i class="bx bx-message-square-dots"></i
           ></a>

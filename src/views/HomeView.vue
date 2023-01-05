@@ -3,13 +3,13 @@
     <section class="home section" id="home">
       <div class="home__container container grid section__border">
         <div class="home__data">
-          <span class="home__greeting">Hi, I'm</span>
-          <h1 class="home__name">Sascha</h1>
+          <span class="home__greeting"></span>
+          <h1 class="home__name">Hi, I'm Sascha</h1>
           <h3 class="home__education">Webapp-Developer</h3>
           <div class="home__buttons">
             <a
-              download=""
-              href="@/assets/pdf/CV.pdf"
+              download="CV.pdf"
+              href="../assets/pdf/CV.pdf"
               class="button button--ghost"
               >Download CV</a
             >
@@ -45,8 +45,30 @@
     </section>
     <section class="about section" id="about">
       <h2 class="section__title">About Me</h2>
-
       <div class="about__container container grid section__border">
+        <div class="home__info">
+          <div>
+            <h3 class="about__info-title">Biography</h3>
+            <p class="about__info-description">
+              Hi, I'm Sascha, Webapp-Developer and passionate about designing
+              modern web-interfaces
+            </p>
+          </div>
+          <div>
+            <h3 class="about__info-title">Contact</h3>
+            <p class="about__info-description">
+              Cologne, Germany <br />
+              sascha_dietrich@outlook.com <br />
+            </p>
+          </div>
+          <div>
+            <h3 class="about__info-title">Service</h3>
+            <p class="about__info-description">
+              Website Design<br />Webapp Development <br />
+              Framework integration<br />Hosting and Administration
+            </p>
+          </div>
+        </div>
         <img src="@/assets/img/IMG_5734.png" alt="" class="about__img" />
         <div class="about__data">
           <div class="about__info">
@@ -66,16 +88,14 @@
               <span class="about__subtitle">5+ </span>
             </div>
           </div>
-          <p class="about__description">
-            Hi, I'm Sascha, Webapp-Developer and passionate about designing
-            modern web-interfaces
-          </p>
+
           <a href="#about" class="button">Contact Me</a>
         </div>
       </div>
     </section>
     <section class="skills section" id="skills">
       <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My favorite skills</span>
       <div class="skills__container container grid section__border">
         <div class="skills__content">
           <h3 class="skills__title">
@@ -217,15 +237,120 @@
     </section>
     <section class="qualifications section" id="qualifications">
       <h2 class="section__title">Qualifications</h2>
-      <div
-        class="qualifications__container container grid section__border"
-      ></div>
+      <span class="section_subtitle">Experience & education</span>
+      <div class="qualifications__container container grid section__border">
+        <div class="qualifiaction__content">
+          <h3 class="qualification_title">
+            <i class="bx bxs-graduation"></i>Education
+          </h3>
+          <div class="qulification__info">
+            <div>
+              <h3 class="qualification__name">
+                Vue.js & TypeScript Intensiv-Schulung
+              </h3>
+              <span class="qualification__year"> 2022/11</span>
+              <span class="qualification__company">workshops.de</span>
+              <p class="qualification__discription">
+                Construction of webapps in the framework Vue.js based on
+                TypeScript
+              </p>
+            </div>
+          </div>
+          <div class="qulification__info">
+            <div>
+              <h3 class="qualification__name">Web-Developer</h3>
+              <span class="qualification__year">since 2022/07</span>
+              <span class="qualification__company">
+                Coding Bootcamp Europe
+              </span>
+              <p class="qualification__discription">
+                Develeoping Website based on HTML / CSS / JS | Framework Vue.js
+                | Unit and E2E testing with Jest and Cypress
+              </p>
+            </div>
+          </div>
+          <div class="qulification__info">
+            <div>
+              <h3 class="qualification__name">
+                MCITP Enterprise Administrator
+              </h3>
+              <span class="qualification__year"> 2010/06 – 2010/10 </span>
+              <span class="qualification__company"> FutureTraining</span>
+            </div>
+          </div>
+        </div>
+        <div class="qualifiaction__content">
+          <h3 class="qualification_title">
+            <i class="bx bx-buildings"></i> Experience
+          </h3>
+          <div class="qulification__info">
+            <div>
+              <h3 class="qualification__name">
+                Webapp-Developer & IT-Administor
+              </h3>
+              <span class="qualification__year">2021/12 - 2022/12</span>
+              <span class="qualification__company">digiblue GmbH</span>
+              <p class="qualification__discription">
+                Deployment and configuration of internal IT infrastructure, web
+                app development for data visualization in project-related
+                customer use-case, project-related communication with customers
+              </p>
+            </div>
+          </div>
+          <div class="qulification__info">
+            <div>
+              <h3 class="qualification__name">IT-Administor</h3>
+              <span class="qualification__year">2019/04 - 2010/07</span>
+              <span class="qualification__company">
+                Indeed Germany | Pieritz select* | RHT* | KI-Group GmbH |
+                Jerocom GmbH | Hays Professional Solution GmbH* | Jar Media GmbH
+                | Job@tive* | RHT* |AixConcept GmbH | NetCologne GmbH |
+                Marko-Medien-Dienst GmbH
+              </span>
+            </div>
+          </div>
+          <div class="qulification__info">
+            <div>
+              <h3 class="qualification__name">Service-Technician</h3>
+              <span class="qualification__year">2010/04 – 2010/06 </span>
+              <span class="qualification__company"
+                >Hemmersbach GmbH & Co KG</span
+              >
+            </div>
+          </div>
+          <div class="qulification__info">
+            <div>
+              <h3 class="qualification__name">UHD-Employee</h3>
+              <span class="qualification__year">2010/04 – 2010/06 </span>
+              <span class="qualification__company"
+                >Comline Computer&Softwarelösungen AG | Ducon Consulting GmbH |
+                TechTeam International AG</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="qualifiaction__content">
+          <h3 class="qualification_title">
+            <i class="bx bx-book-reader"></i> Apprenticeship
+          </h3>
+          <div class="qulification__info">
+            <div>
+              <h3 class="qualification__name">
+                Apprenticeship by IHK as IT-System Kaufmann
+              </h3>
+              <span class="qualification__year">2003/09 – 2006/06</span>
+              <span class="qualification__company">Deutsche Telekom AG</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="service section" id="service">
       <span class="section__subtitle">My Services</span>
       <h2 class="section__title">What I Offer</h2>
       <div class="services__container container grid section__border">
         <div class="services__card">
+          <i class="bx bx-code-alt"></i><i class="bx bx-terminal"></i>
           <h3 class="services__title">
             Development &<br />
             Testing
@@ -270,6 +395,7 @@
           </div>
         </div>
         <div class="services__card">
+          <i class="bx bx-layout"></i><i class="bx bx-image"></i>
           <h3 class="services__title">
             Layout &<br />
             Design
@@ -310,6 +436,9 @@
           </div>
         </div>
         <div class="services__card">
+          <i class="bx bx-cloud"></i>
+          <i class="bx bxs-devices"></i>
+          <i class="bx bx-cog"></i>
           <h3 class="services__title">
             Hosting &<br />
             Administration
@@ -350,16 +479,161 @@
         </div>
       </div>
     </section>
+    <section class="testimonial section" id="testimonial">
+      <h2 class="section__title">Testimonial</h2>
+      <span class="section__subtitle">My colleagues and superior saying </span>
+      <div class="container section__border">
+        <div class="testimoial__container">
+          <swiper :navigation="true" :modules="modules" class="mySwiper">
+            <swiper-slide class="testimonial__content swiper-slide">
+              <p class="testimonial__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+                adipisci fuga labore fugit repudiandae quaerat iure, impedit
+                quam id delectus placeat saepe aut porro assumenda expedita
+                error, eum exercitationem architecto.
+              </p>
+              <div>
+                <h3 class="testimonial__name">Max</h3>
+                <span class="testimonial__subtitle">Co-Worker</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="testimonial__content swiper-slide">
+              <p class="testimonial__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+                adipisci fuga labore fugit repudiandae quaerat iure, impedit
+                quam id delectus placeat saepe aut porro assumenda expedita
+                error, eum exercitationem architecto.
+              </p>
+              <div>
+                <h3 class="testimonial__name">Stefan</h3>
+                <span class="testimonial__subtitle">Supervisior</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="testimonial__content swiper-slide">
+              <p class="testimonial__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+                adipisci fuga labore fugit repudiandae quaerat iure, impedit
+                quam id delectus placeat saepe aut porro assumenda expedita
+                error, eum exercitationem architecto.
+              </p>
+              <div>
+                <h3 class="testimonial__name">Julian</h3>
+                <span class="testimonial__subtitle">Supervisior</span>
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
+    </section>
     <section class="contact section" id="contact">
       <h2 class="section__title">Contact</h2>
-      <div class="contact__container container grid section__border"></div>
+      <span class="section__subtitle">Get in touch </span>
+      <div class="contact__container container grid section__border">
+        <div class="contact__content">
+          <h3 class="contact__title"><i class="bx bx-chat"></i>Talk to me</h3>
+          <div class="contact__info">
+            <div class="contact__data">
+              <span class="contact__data-title">Email</span>
+              <span class="contact__data-info"
+                >sascha_dietrich(at)outlook.com</span
+              >
+            </div>
+            <div class="contact__data">
+              <span class="contact__data-title">Whatsapp</span>
+              <span class="contact__data-info">(+49)-151- 1785-2500</span>
+              <a
+                href="https://api.whatsapp.com/send?phone=4915117852500&text=Find your contact at your Portfolio."
+                target="_blank"
+                class="contact__button"
+                >Write me <i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+            <div class="contact__data">
+              <span class="contact__data-title">Messenger</span>
+              <span class="contact__data-info">@sdietrich1987</span>
+              <a
+                href="https://m.me/sdietrich1987"
+                target="_blank"
+                class="contact__button"
+                >Write me <i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact__content">
+          <h3 class="contact__title">
+            <i class="bx bx-send"></i>You want me for your project?
+          </h3>
+          <form ref="form" @submit.prevent="sendEmail">
+            <label>Name</label>
+            <input
+              type="text"
+              v-model="name"
+              name="user_name"
+              placeholder="Your Name"
+            />
+            <label>Email</label>
+            <input
+              type="email"
+              v-model="email"
+              name="user_email"
+              placeholder="Your Email"
+            />
+            <label>Message</label>
+            <textarea
+              name="user_project"
+              v-model="message"
+              cols="30"
+              rows="5"
+              placeholder="Message"
+            >
+            </textarea>
+
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 </template>
-<script setup>
+<script>
 import { ref } from "vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation } from "swiper";
+import emailjs from "../../node_modules/emailjs-com";
 
-const active = ref(false);
-const active2 = ref(false);
-const active3 = ref(false);
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Navigation],
+      active: ref(false),
+      active2: ref(false),
+      active3: ref(false),
+      name: "",
+      email: "",
+      message: "",
+    };
+  },
+  methods: {
+    sendEmail() {
+      emailjs
+        .sendForm(
+          "service_pvkjntj",
+          "template_6ytyosq",
+          this.$refs.form,
+          "DsZHBt1lwbMV_UDGP"
+        )
+        .then(
+          () => {},
+          (error) => {
+            alert("Something has failed...." + { error });
+          }
+        );
+    },
+  },
+};
 </script>
