@@ -9,11 +9,13 @@
         <li><a href="#projects" class="footer__link">Projects</a></li>
       </ul>
       <ul class="footer__social">
-        <a href="" class="footer__social-link"
-          ><i class="bx bxl-github bx-rotate-180"></i
+        <a href="https://github.com/dreadderino1987" class="footer__social-link"
+          ><i class="bx bxl-github footer__img"></i
         ></a>
-        <a href="" class="footer__social-link"
-          ><i class="bx bxl-linkedin bx-rotate-180"></i
+        <a
+          href="https://www.linkedin.com/in/webdev-sdietrich/"
+          class="footer__social-link"
+          ><i class="bx bxl-linkedin footer__img"></i
         ></a>
       </ul>
       <span class="footer__copy">

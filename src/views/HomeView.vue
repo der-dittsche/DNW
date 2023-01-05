@@ -89,7 +89,7 @@
             </div>
           </div>
 
-          <a href="#about" class="button">Contact Me</a>
+          <a href="#contact" class="button">Contact Me</a>
         </div>
       </div>
     </section>
@@ -237,7 +237,7 @@
     </section>
     <section class="qualifications section" id="qualifications">
       <h2 class="section__title">Qualifications</h2>
-      <span class="section_subtitle">Experience & education</span>
+      <span class="section__subtitle">Experience & education</span>
       <div class="qualifications__container container grid section__border">
         <div class="qualifiaction__content">
           <h3 class="qualification_title">
@@ -248,7 +248,7 @@
               <h3 class="qualification__name">
                 Vue.js & TypeScript Intensiv-Schulung
               </h3>
-              <span class="qualification__year"> 2022/11</span>
+              <span class="qualification__year"> 2022/11</span><br />
               <span class="qualification__company">workshops.de</span>
               <p class="qualification__discription">
                 Construction of webapps in the framework Vue.js based on
@@ -259,7 +259,7 @@
           <div class="qulification__info">
             <div>
               <h3 class="qualification__name">Web-Developer</h3>
-              <span class="qualification__year">since 2022/07</span>
+              <span class="qualification__year">since 2022/07</span><br />
               <span class="qualification__company">
                 Coding Bootcamp Europe
               </span>
@@ -274,7 +274,7 @@
               <h3 class="qualification__name">
                 MCITP Enterprise Administrator
               </h3>
-              <span class="qualification__year"> 2010/06 – 2010/10 </span>
+              <span class="qualification__year"> 2010/06 – 2010/10 </span><br />
               <span class="qualification__company"> FutureTraining</span>
             </div>
           </div>
@@ -288,7 +288,7 @@
               <h3 class="qualification__name">
                 Webapp-Developer & IT-Administor
               </h3>
-              <span class="qualification__year">2021/12 - 2022/12</span>
+              <span class="qualification__year">2021/12 - 2022/12</span><br />
               <span class="qualification__company">digiblue GmbH</span>
               <p class="qualification__discription">
                 Deployment and configuration of internal IT infrastructure, web
@@ -300,11 +300,11 @@
           <div class="qulification__info">
             <div>
               <h3 class="qualification__name">IT-Administor</h3>
-              <span class="qualification__year">2019/04 - 2010/07</span>
+              <span class="qualification__year">2019/04 - 2010/07</span><br />
               <span class="qualification__company">
-                Indeed Germany | Pieritz select* | RHT* | KI-Group GmbH |
-                Jerocom GmbH | Hays Professional Solution GmbH* | Jar Media GmbH
-                | Job@tive* | RHT* |AixConcept GmbH | NetCologne GmbH |
+                Indeed Germany | Pieritz select* | RHT | KI-Group GmbH | Jerocom
+                GmbH | Hays Professional Solution GmbH | Jar Media GmbH |
+                Job@tive |AixConcept GmbH | NetCologne GmbH |
                 Marko-Medien-Dienst GmbH
               </span>
             </div>
@@ -312,7 +312,7 @@
           <div class="qulification__info">
             <div>
               <h3 class="qualification__name">Service-Technician</h3>
-              <span class="qualification__year">2010/04 – 2010/06 </span>
+              <span class="qualification__year">2010/04 – 2010/06 </span><br />
               <span class="qualification__company"
                 >Hemmersbach GmbH & Co KG</span
               >
@@ -321,7 +321,7 @@
           <div class="qulification__info">
             <div>
               <h3 class="qualification__name">UHD-Employee</h3>
-              <span class="qualification__year">2010/04 – 2010/06 </span>
+              <span class="qualification__year">2010/04 – 2010/06 </span><br />
               <span class="qualification__company"
                 >Comline Computer&Softwarelösungen AG | Ducon Consulting GmbH |
                 TechTeam International AG</span
@@ -338,7 +338,7 @@
               <h3 class="qualification__name">
                 Apprenticeship by IHK as IT-System Kaufmann
               </h3>
-              <span class="qualification__year">2003/09 – 2006/06</span>
+              <span class="qualification__year">2003/09 – 2006/06</span><br />
               <span class="qualification__company">Deutsche Telekom AG</span>
             </div>
           </div>
@@ -494,7 +494,7 @@
               </p>
               <div>
                 <h3 class="testimonial__name">Max</h3>
-                <span class="testimonial__subtitle">Co-Worker</span>
+                <p class="testimonial__subtitle">Co-Worker</p>
               </div>
             </swiper-slide>
             <swiper-slide class="testimonial__content swiper-slide">
@@ -506,7 +506,7 @@
               </p>
               <div>
                 <h3 class="testimonial__name">Stefan</h3>
-                <span class="testimonial__subtitle">Supervisior</span>
+                <p class="testimonial__subtitle">Supervisior</p>
               </div>
             </swiper-slide>
             <swiper-slide class="testimonial__content swiper-slide">
@@ -518,7 +518,7 @@
               </p>
               <div>
                 <h3 class="testimonial__name">Julian</h3>
-                <span class="testimonial__subtitle">Supervisior</span>
+                <p class="testimonial__subtitle">Supervisior</p>
               </div>
             </swiper-slide>
           </swiper>
@@ -537,6 +537,12 @@
               <span class="contact__data-info"
                 >sascha_dietrich(at)outlook.com</span
               >
+              <a
+                href="https://m.me/sdietrich1987"
+                target="_blank"
+                class="contact__button"
+              >
+              </a>
             </div>
             <div class="contact__data">
               <span class="contact__data-title">Whatsapp</span>
@@ -564,32 +570,41 @@
           <h3 class="contact__title">
             <i class="bx bx-send"></i>You want me for your project?
           </h3>
-          <form ref="form" @submit.prevent="sendEmail">
-            <label>Name</label>
-            <input
-              type="text"
-              v-model="name"
-              name="user_name"
-              placeholder="Your Name"
-            />
-            <label>Email</label>
-            <input
-              type="email"
-              v-model="email"
-              name="user_email"
-              placeholder="Your Email"
-            />
-            <label>Message</label>
-            <textarea
-              name="user_project"
-              v-model="message"
-              cols="30"
-              rows="5"
-              placeholder="Message"
-            >
-            </textarea>
-
-            <input type="submit" value="Send" />
+          <form ref="form" @submit.prevent="sendEmail" class="contact__form">
+            <div class="contact__form-item">
+              <label>Name</label>
+              <input
+                type="text"
+                v-model="name"
+                name="user_name"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="contact__form-item">
+              <label>Email</label>
+              <input
+                type="email"
+                v-model="email"
+                name="user_email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="contact__form-item">
+              <label>Message</label>
+              <textarea
+                name="user_project"
+                v-model="message"
+                cols="30"
+                rows="5"
+                placeholder="Message"
+              >
+              </textarea>
+            </div>
+            <div class="contact__form-item">
+              <button type="submit" class="contact__form-button">
+                Submit<i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </div>
           </form>
         </div>
       </div>
